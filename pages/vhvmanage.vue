@@ -1,61 +1,61 @@
 <template>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <div class="page">
-        <div class="sidebar">
+    <div class="page h-lvh w-full bg-white flex text-bluetext">
+        <div class="sidebar w-1/4 p-3.5">
             <img src="/pictures/logotab.png" alt="logotab" />
 
-            <div class="sidebar-item">
-                <div class="sidebar-icon">
-                    <i class="fa-solid fa-chart-pie"></i>
+            <div class="items-center my-5" style="display: flex;">
+                <div class="sidebar-icon w-11 h-11 items-center justify-center text-gray mr-5 rounded-xl" style="display: flex;">
+                    <i class="fa-solid fa-chart-pie text-2xl"></i>
                 </div>
-                <a href="#" class="act">
-                    <p>หน้าหลัก</p>
+                <a href="#" class="act no-underline">
+                    <p class="text-gray">หน้าหลัก</p>
                 </a>
             </div>
 
-            <div class="sidebar-item">
-                <div class="sidebar-icon">
-                    <i class="fa-solid fa-circle-info"></i>
+            <div class="items-center my-5" style="display: flex;">
+                <div class="sidebar-icon w-11 h-11 items-center justify-center text-gray mr-5 rounded-xl" style="display: flex;">
+                    <i class="fa-solid fa-circle-info text-2xl"></i>
                 </div>
-                <a href="#">
-                    <p>จัดการข้อมูลผู้ป่วย</p>
+                <a href="#" class="no-underline">
+                    <p class="text-gray">จัดการข้อมูลผู้ป่วย</p>
                 </a>
             </div>
 
-            <div class="sidebar-item">
-                <div class="sidebar-icon">
-                    <i class="fa-solid fa-chart-line"></i>
+            <div class="items-center my-5" style="display: flex;">
+                <div class="sidebar-icon w-11 h-11 items-center justify-center text-gray mr-5 rounded-xl" style="display: flex;">
+                    <i class="fa-solid fa-chart-line text-2xl"></i>
                 </div>
-                <a href="#">
-                    <p>สถานะการติดตาม</p>
+                <a href="#" class="no-underline">
+                    <p class="text-gray">สถานะการติดตาม</p>
                 </a>
             </div>
 
-            <div class="sidebar-item siderbar-item-active">
-                <div class="sidebar-icon ">
-                    <i class="fa-solid fa-people-group" style="color: white;"></i>
+            <div class="siderbar-item-active items-center my-5 bg-bluesky rounded-lg" style="display: flex;">
+                <div class="sidebar-icon w-11 h-11 items-center justify-center text-gray mr-5 rounded-xl" style="display: flex;">
+                    <i class="fa-solid fa-people-group text-2xl" style="color: white;"></i>
                 </div>
-                <a href="#">
-                    <p style="color: white;">จัดการข้อมูลเจ้าหน้าที่ฯลฯ</p>
+                <a href="#" class="no-underline">
+                    <p class="text-white">จัดการข้อมูลเจ้าหน้าที่ฯลฯ</p>
                 </a>
             </div>
 
-            <div class="sidebar-item">
-                <div class="sidebar-icon">
-                    <i class="fa-solid fa-right-from-bracket"></i>
+            <div class="items-center my-5" style="display: flex;">
+                <div class="sidebar-icon w-11 h-11 items-center justify-center text-gray mr-5 rounded-xl" style="display: flex;">
+                    <i class="fa-solid fa-right-from-bracket text-2xl"></i>
                 </div>
-                <a href="#">
-                    <p>ออกจากระบบ</p>
+                <a href="#" class="no-underline">
+                    <p class="text-gray">ออกจากระบบ</p>
                 </a>
             </div>
 
-            <div class="hr"></div>
+            <div class="hr w-full h-px bg-black"></div>
         </div>
-        <div class="content">
+        <div class="content w-full bg-sky-400 border-2 border-black">
             <!-- Top Bar -->
             <div class="flex items-center justify-between bg-red-500">
                 <div class="top-bar-header">
-                    <h1>จัดการข้อมูลเจ้าหน้าที่ติดตามผู้ป่วย</h1>
+                    <h1 class ="font-Poppins font-semibold not-italic text-3xl p-2.5 ">จัดการข้อมูลเจ้าหน้าที่ติดตามผู้ป่วย</h1>
                 </div>
                 <!-- Nav bar -->
                 <div style="display: flex; align-items: center; margin: 0 10px">
@@ -92,93 +92,6 @@
     font-family: "Noto Sans", sans-serif;
 }
 
-/* .top-bar {
-    background-color: #5D97EF;
-    display: flex;
-    align-items: center;
-} */
-
-
-h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
-    padding: 10px;
-}
-
-.page {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    color: #151D48;
-}
-
-.sidebar {
-    width: 25%;
-    padding: 15px;
-}
-
-.content {
-    width: 100%;
-    background-color: #5D97EF;
-    border: 2px solid black;
-}
-
-
-.sidebar-item {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-    color: #808191;
-}
-
-.sidebar-icon {
-    width: 45px;
-    height: 45px;
-    color: #808191;
-    /* background-color: #353540; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-.siderbar-item-active {
-    color: #737791;
-}
-
-.siderbar-item-active {
-    background-color: #5D97EF;
-    color: #ffff;
-    border-radius: 10px;
-}
-
-.fa-chart-pie {
-    color: #737791;
-}
-
-.sidebar-item a {
-    text-decoration: none;
-    color: #737791;
-}
-
-.sidebar-item .act {
-    text-decoration: none;
-    color: #737791;
-}
-
-.fa-solid {
-    font-size: 1.5rem;
-}
-
-.hr {
-    width: 100%;
-    height: 1px;
-    background-color: #393846;
-}
 </style>
 
 <script>
