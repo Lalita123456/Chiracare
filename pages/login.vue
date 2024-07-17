@@ -3,26 +3,29 @@
       <section>
             <div class="card">
                 <div class="logo">
-                    <img src="/assets/pictures/logo.png" width="454">
+                    <img src="/pictures/logo.png" style=" width: 300px; display: flex;
+    margin: 0 auto;">
                 </div>
   
                 <div class="container-form">
                     <form action="">
-                        <label for="email"><b>ชื่อผู้ใช้ (username) </b>
-                            <input class="username" type="text" placeholder="Enter Email" name="email" id="email" required>
+                      <div>
+                        <label for="email" class="font-semibold">
+                          ชื่อผู้ใช้ (เลขบัตรประชาชน)
                         </label>
-  
-  
-                        <label for="psw"><b>รหัสผ่าน (password)</b>
-                            <input class="password" type="password" placeholder="Enter Password" name="psw" id="psw"
-                                required >
-                                
+                        <input class="flex p-3.5 my-2 mx-auto w-full rounded-lg" type="text" placeholder="Enter Email" name="email" id="email" required>
+                      </div>
+
+                      <div>
+                        <label for="password" class="font-semibold">
+                          รหัสผ่าน (Password)
                         </label>
-                       
-                        <p class="pw">ลืมรหัสผ่าน?</p>
-                        <button class="btn">เข้าสู่ระบบ</button>
+                        <input class="flex p-3.5 my-2 mx-auto w-full rounded-lg" type="password" placeholder="Enter Password" name="password" id="password" required>
+                      </div>
+                        <a href="/vhvmanage"><p class="pw">ลืมรหัสผ่าน?</p></a>
+                        <button type ="submit" class="btn"><a href="/vhvmanage">เข้าสู่ระบบ</a></button>
   
-                        <a class="reg" href="#">ลงทะเบียนผู้ใช้ใหม่</a>
+                        <a class="reg" href="/register">ลงทะเบียนผู้ใช้ใหม่</a>
                     </form>
                 </div>
   
@@ -38,7 +41,7 @@
   
   .bg-container {
     /* background: url('~/assets/image/bg-main.png') no-repeat; */
-    background: url('/assets/pictures/Login.jpg'), lightgray 50% / cover no-repeat;
+    background: url('/pictures/Login.jpg'), lightgray 50% / cover no-repeat;
     /* Set rules to fill background */
     min-height: 100%;
     min-width: 1024px;
@@ -54,19 +57,6 @@
     right: 0;
   }
   
-  input[type=text],
-  input[type=password] {
-    width: 700px;
-    padding: 15px;
-    margin: .5rem auto;
-    display: flex;
-    border: 1px solid #575757;
-    width: 727.732px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    /* border: 2px solid red; */
-  
-  }
   
   p {
     color: #111f46;
@@ -108,7 +98,7 @@
   .card {
     height: 600px;
     width: 800px;
-    background-color: rgba(255, 255, 255, 0.13);
+    background-color: rgba(135, 135, 135, 0.176);
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -150,17 +140,7 @@
     align-items: center;
   }
   
-  .logo img {
-    /* margin: 5px; */
-    width: 300px;
-    /* justify-content: center;
-    align-items: center; */
-    display: flex;
-    margin: 0 auto;
-  }
-  
-  
-  
+ 
   /* .login-info {
     margin: 67px;
     text-align: center;
